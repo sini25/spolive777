@@ -1,0 +1,131 @@
+/* ================= FOOTER ================= */
+
+.footer {
+    background: var(--bg-card);
+    margin-top: 80px;
+    border-top: 1px solid var(--border-default);
+}
+
+/* ===== TOP LINKS ===== */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--primary-500);
+}
+
+.legal-column {
+    max-width: 320px;
+}
+
+.legal-column h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.legal-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.legal-bottom img {
+    height: 40px;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+.legal-bottom h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--secondary-500);
+}
+
+
+/* ===== PROVIDERS ===== */
+
+.footer-providers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 320px;
+    border-top: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.footer-providers img {
+    height: 50px;
+    opacity: 0.8;
+    /* filter: brightness(0) invert(1); */
+    transition: 0.3s;
+}
+
+.footer-providers img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+
+/* ===== BOTTOM SECTION ===== */
+
+.footer-bottom {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: var(--text-secondary);
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-500);
+    text-shadow: var(--glow-purple);
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.powered-logo {
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
