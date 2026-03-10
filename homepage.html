@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spolive - Homepage</title>
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<!-- ================= TOP HEADER ================= -->
+<header class="top-header">
+    <div class="nav-container">
+
+        <div class="logo">
+            <img src="images/spolive.png" alt="Spolive">
+        </div>
+
+        <div class="nav-actions">
+            <a href="login.html" class="btn-outline">Login</a>
+            <a href="register.html" class="btn-primary">Register</a>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= SECOND NAV ================= -->
+<nav class="main-nav">
+    <div class="nav-container">
+
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Slots</a></li>
+            <li><a href="#">Live Casino</a></li>
+            <li><a href="#">Leaderboard</a></li>
+        </ul>
+
+        <div class="logo">
+            <img src="images/spolive.png" alt="Spolive">
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= BANNER & ADVERTISEMENT ================= -->
+<div class="banner_section">
+
+    <!-- PROMOTION SLIDER -->
+    <div class="promo_slider swiper promoSwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="images/banner1.png" alt="Banner 1">
+
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/banner2.png" alt="Banner 2">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/banner3.png" alt="Banner 3">
+            </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="swiper-pagination promo-pagination"></div>
+
+        <!-- ARROWS -->
+        <div class="swiper-button-prev promo-prev"></div>
+        <div class="swiper-button-next promo-next"></div>
+
+    </div>
+
+
+    <!-- ADS SLIDER -->
+    <div class="ads_slider swiper adsSwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="images/ad-card.png">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/350?5">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/350?6">
+            </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="swiper-pagination ads-pagination"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= GAME CATEGORY ================= -->
+
+<section class="game-category">
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <img class="img-default" src="images/sports.png">
+            <img class="img-hover" src="images/sports-hover.png">
+            <p>SPORTS</p>
+        </div>
+
+        <div class="category-card">
+            <img class="img-default" src="images/live-sports.png">
+            <img class="img-hover" src="images/live-sports-hover.png">
+            <p>LIVE SPORTS</p>
+        </div>
+
+        <div class="category-card">
+            <img class="img-default" src="images/esports.png">
+            <img class="img-hover" src="images/esports-hover.png">
+            <p>E-SPORTS</p>
+        </div>
+
+        <div class="category-card">
+            <img class="img-default" src="images/live-casino.png">
+            <img class="img-hover" src="images/live-casino-hover.png">
+            <p>LIVE CASINO</p>
+        </div>
+
+        <div class="category-card">
+            <img class="img-default" src="images/slots.png">
+            <img class="img-hover" src="images/slots-hover.png">
+            <p>SLOTS</p>
+        </div>
+
+        <div class="category-card">
+            <img class="img-default" src="images/mini-games.png" alt="Mini Games">
+            <img class="img-hover" src="images/mini-games-hover.png">
+            <p>MINI GAMES</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= POPULAR GAMES SECTION ================= -->
+
+<section class="popular_games">
+
+    <div class="section_header">
+        <h2>Popular games</h2>
+        <a href="#" class="see_all">See all</a>
+    </div>
+
+    <!-- Sport Tabs  -->
+    <div class="sport_tabs">
+        <button class="sport active"><i class="fa-solid fa-basketball"></i> Basketball</button>
+        <button class="sport"><i class="fa-solid fa-futbol"></i> Football</button>
+        <button class="sport"><i class="fa-solid fa-volleyball"></i> Volleyball</button>
+        <button class="sport"><i class="fa-solid fa-hockey-puck"></i> Hockey</button>
+        <button class="sport"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Tennis</button>
+    </div>
+
+    <!-- Match Cards  -->
+    <div class="games_row">
+
+        <!-- Cards 1 -->
+         <div class="game_card">
+
+            <div class="league">
+                <div class="league_left">
+                    <span><i class="fa-solid fa-basketball"></i> NBA</span>
+                </div>
+
+                <div class="league_right">
+                    <span>10.00 | March 10, 2026 <i class="fa-regular fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="teams">
+                <div class="team">
+                    <img src="images/team1.webp" alt="Team 1">
+                    <span>Golden State World</span>
+                </div>
+
+                <div class="score">
+                    <span>00</span>
+                    <span>01</span>
+                </div>
+
+                <div class="team right">
+                    <img src="images/team2.webp" alt="Team 2">
+                    <span>Utah Jazz</span>
+                </div>
+
+            </div>
+
+            <div class="odds">
+                <div class="odd">2.35</div>
+                <div class="odd">1.55</div>
+            </div>
+         </div>
+
+        <!-- Cards 2 -->
+         <div class="game_card">
+
+            <div class="league">
+                <div class="league_left">
+                    <span><i class="fa-solid fa-basketball"></i> Euroleague</span>
+                </div>
+
+                <div class="league_right">
+                    <span>04.00 | March 10, 2026 <i class="fa-regular fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="teams">
+                <div class="team">
+                    <img src="images/team3.webp" alt="Team 1">
+                    <span>Busan KCC</span>
+                </div>
+
+                <div class="score">
+                    <span>21</span>
+                    <span>15</span>
+                </div>
+
+                <div class="team right">
+                    <img src="images/team4.webp" alt="Team 2">
+                    <span>Ulsan Hyundai</span>
+                </div>
+
+            </div>
+
+            <div class="odds">
+                <div class="odd">2.35</div>
+                <div class="odd">1.55</div>
+            </div>
+         </div>
+
+        <!-- Cards 3 -->
+         <div class="game_card">
+
+            <div class="league">
+                <span><i class="fa-solid fa-basketball"></i> KBL</span>
+                <span>11.00 | March 11, 2026 <i class="fa-regular fa-star"></i></span>
+            </div>
+
+            <div class="teams">
+                <div class="team">
+                    <img src="images/team5.webp" alt="Team 1">
+                    <span>Paris Basketball</span>
+                </div>
+
+                <div class="score">
+                    <span>36</span>
+                    <span>32</span>
+                </div>
+
+                <div class="team right">
+                    <img src="images/team6.webp" alt="Team 2">
+                    <span>Olympiacos Pirates</span>
+                </div>
+
+            </div>
+
+            <div class="odds">
+                <div class="odd">0.59</div>
+                <div class="odd">0.01</div>
+            </div>
+         </div>
+
+        <!-- Cards 4 -->
+         <div class="game_card">
+
+            <div class="league">
+                <span><i class="fa-solid fa-basketball"></i> NBA</span>
+                <span>10.00 | March 12, 2026 <i class="fa-regular fa-star"></i></span>
+            </div>
+
+            <div class="teams">
+                <div class="team">
+                    <img src="images/team7.webp" alt="Team 1">
+                    <span>Memphis</span>
+                </div>
+
+                <div class="score">
+                    <span>VS</span>
+                    <!-- <span>41</span> -->
+                </div>
+
+                <div class="team right">
+                    <img src="images/team8.webp" alt="Team 2">
+                    <span>Philadelphia</span>
+                </div>
+
+            </div>
+
+            <div class="odds">
+                <div class="odd">1.36</div>
+                <div class="odd">2.65</div>
+            </div>
+         </div>
+
+        <!-- Cards 5 -->
+         <div class="game_card">
+
+            <div class="league">
+                <span><i class="fa-solid fa-basketball"></i> NBA</span>
+                <span>02.00 | March 12, 2026 <i class="fa-regular fa-star"></i></span>
+                
+            </div>
+
+            <div class="teams">
+                <div class="team">
+                    <img src="images/team9.webp" alt="Team 1">
+                    <span>Dallas Mavericks</span>
+                </div>
+
+                <div class="score">
+                    <span>VS</span>
+                    <!-- <span>41</span> -->
+                </div>
+
+                <div class="team right">
+                    <img src="images/team10.webp" alt="Team 2">
+                    <span>Atlanta</span>
+                </div>
+
+            </div>
+
+            <div class="odds">
+                <div class="odd">2.34</div>
+                <div class="odd">0.98</div>
+            </div>
+         </div>
+    </div>
+
+</section>
+
+
+<!-- ================= PROVIDER GAMES ================= -->
+<section class="provider_games">
+    <h2>Provider games</h2>
+
+    <!-- Sport Tabs  -->
+    <div class="provider_tabs">
+        <button class="provider active">All</button>
+        <button class="provider">Evolution</button>
+        <button class="provider">Pragmatic Play</button>
+        <button class="provider">Creedroomz</button>
+    </div>
+
+    <div class="provider_grid">
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+        <div class="provider_card">
+            <img src="images/provider-girl1.png" alt="Provider 1">
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= HERO ================= -->
+<!-- <section class="hero">
+    <div class="hero-content">
+        <h1>Experience the Future of Casino Gaming</h1>
+        <p>Neon-powered games. Massive jackpots. Instant payouts.</p>
+        <button class="btn-primary">Start Playing Now</button>
+    </div>
+</section> -->
+
+<!-- ================= STATS ================= -->
+<!-- <section class="stats">
+    <div class="stat-card">
+        <h3>$5.2M+</h3>
+        <p>Total Payout</p>
+    </div>
+    <div class="stat-card">
+        <h3>25K+</h3>
+        <p>Active Players</p>
+    </div>
+    <div class="stat-card">
+        <h3>120+</h3>
+        <p>Games Available</p>
+    </div>
+</section> -->
+
+<!-- ================= GAME CARDS 1 ================= -->
+<section class="games">
+    <h2>Games</h2>
+
+    <div class="game-grid">
+        <div class="game-card">🎰 Slot Machine</div>
+        <div class="game-card">🃏 Poker Night</div>
+        <div class="game-card">♠ Blackjack</div>
+        <div class="game-card">🎲 Dice Roll</div>
+        <div class="game-card">🎰 Sugar Rush</div>
+        <div class="game-card">🎲 5 Lions</div>
+        <div class="game-card">♠ Gates of Olympus</div>
+        <div class="game-card">🃏 Lightning Storm</div>
+    </div>
+</section>
+
+
+<!-- ================= GAME CARDS 2 ================= -->
+<section class="games">
+    <h2>Other Games</h2>
+
+    <div class="game-grid">
+        <div class="game-card">🎰 Slot Machine</div>
+        <div class="game-card">🃏 Poker Night</div>
+        <div class="game-card">♠ Blackjack</div>
+        <div class="game-card">🎲 Dice Roll</div>
+        <div class="game-card">🎰 Sugar Rush</div>
+        <div class="game-card">🎲 5 Lions</div>
+        <div class="game-card">♠ Gates of Olympus</div>
+        <div class="game-card">🃏 Lightning Storm</div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <!-- ===== SECTION 1: LINKS ===== -->
+    <div class="footer-top">
+
+        <div class="footer-column">
+            <h3>About Company</h3>
+            <a href="#">About Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Gaming Responsibility</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Product</h3>
+            <a href="#">Live Sports</a>
+            <a href="#">Sports</a>
+            <a href="#">Live Casino</a>
+            <a href="#">Slot</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Statistics</h3>
+            <a href="#">Korean View</a>
+            <a href="#">Match Results</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Live Chat</a>
+            <a href="#">Casino User Guide</a>
+        </div>
+
+        <div class="footer-column legal-column">
+            <h3>
+                BetLive is operating under registered office at 
+                ECommerce Park Vredenberg, Curacao under the 
+                License No. 8048/JAZ issued to Antillephone, 
+                Authorized and Regulated by the Government of Curacao.
+            </h3>
+
+            <div class="legal-bottom">
+                <img src="images/provider1.png" alt="Provider1">
+                <h1>18+</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===== SECTION 2: PROVIDERS ===== -->
+    <div class="footer-providers">
+        <img src="images/provider1.png" alt="Provider1">
+        <img src="images/provider2.png" alt="Provider2">
+        <img src="images/provider3.png" alt="Provider3">
+        <img src="images/provider4.png" alt="Provider4">
+        <img src="images/provider5.png" alt="Provider5">
+        <img src="images/provider6.png" alt="Provider6">
+        <img src="images/provider7.png" alt="Provider7">
+        <img src="images/provider8.png" alt="Provider8">
+        <img src="images/provider9.png" alt="Provider9">
+        
+    </div>
+
+    <!-- ===== SECTION 3: SOCIAL + COPYRIGHT ===== -->
+    <div class="footer-bottom">
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <p>
+            © 2026 Spolive. All Rights Reserved.
+            Powered by 
+            <img src="images/spolive.png" alt="Company logo" class="powered-logo">
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+
+/* Promotion slider */
+
+new Swiper(".promoSwiper",{
+    loop:true,
+    autoplay:{
+        delay:3000
+    },
+
+    pagination:{
+        el:".promo-pagination",
+        clickable:true
+    }
+
+});
+
+
+/* Ads slider */
+
+new Swiper(".promoSwiper",{
+
+    loop:true,
+
+    autoplay:{
+        delay:3000
+    },
+
+    pagination:{
+        el:".promo-pagination",
+        clickable:true
+    },
+
+    navigation:{
+        nextEl:".promo-next",
+        prevEl:".promo-prev"
+    }
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,709 @@
+/* ================= DESIGN TOKENS ================= */
+
+:root {
+/* ===== BACKGROUND ===== */
+--bg-primary: #0F0B1F;
+--bg-secondary: #15102A;
+--bg-tertiary: #120C24;
+
+--bg-card: #1C1333;
+--bg-card-hover: #221A3D;
+--bg-card-title: #3A355A;
+--bg-elevated: #2A2445;
+
+--bg-sidebar: #120C24;
+--bg-sidebar-hover: #1E1638;
+
+--bg-overlay: rgba(0, 0, 0, 0.6);
+--bg-glass: rgba(28, 19, 51, 0.7);
+
+
+/* ===== PRIMARY (PURPLE) ===== */
+--primary-400: #A855F7;
+--primary-500: #8B3DFF;
+--primary-600: #7A2EFF;
+--primary-700: #651DDB;
+
+/* ===== SECONDARY (MAGENTA) ===== */
+--secondary-400: #F472FF;
+--secondary-500: #C026FF;
+--secondary-600: #A21CAF;
+
+/* ===== ACCENT (CYBER BLUE) ===== */
+--accent-blue: #00D1FF;
+--accent-cyan: #00F0FF;
+
+/* ===== GRADIENTS ===== */
+--gradient-primary: linear-gradient(90deg, #8B3DFF, #C026FF);
+--gradient-hero: linear-gradient(135deg, #651DDB, #C026FF, #00D1FF);
+--gradient-dark: linear-gradient(180deg, #120C24, #0F0B1F);
+--gradient-card: linear-gradient(145deg, #1C1333, #221A3D);
+
+
+/* ===== GLOW EFFECTS ===== */
+--glow-purple: 0 0 20px rgba(139, 61, 255, 0.6);
+--glow-pink: 0 0 20px rgba(192, 38, 255, 0.6);
+--glow-blue: 0 0 20px rgba(0, 209, 255, 0.6);
+
+/* ===== SHADOW ===== */
+--shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.3);
+--shadow-md: 0 8px 20px rgba(0, 0, 0, 0.4);
+--shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.5);
+
+/* ===== TEXT COLORS ===== */
+--text-primary: #FFFFFF;
+--text-secondary: #B9B4D0;
+--text-muted: #7C7899;
+--text-inactive: #5C5875;
+
+/* ===== TEXT ON COLOR ===== */
+--text-on-primary: #FFFFFF;
+--text-on-danger: #FFFFFF;
+--text-on-success: #FFFFFF;
+
+
+
+/* ===== SUCCESS ===== */
+--success-500: #22C55E;
+--success-400: #4ADE80;
+--success-bg: #052E1B;
+
+/* ===== WARNING ===== */
+--warning-500: #F59E0B;
+--warning-400: #FBBF24;
+--warning-bg: #3A2A05;
+
+/* ===== DANGER ===== */
+--danger-500: #EF4444;
+--danger-400: #F87171;
+--danger-bg: #3A0D12;
+
+/* ===== INFO ===== */
+--info-500: #3B82F6;
+--info-bg: #0A1F3A;
+
+
+
+/* ===== DISABLED ===== */
+--disabled-bg: #2A2445;
+--disabled-border: #3A355A;
+--disabled-text: #6B6785;
+--disabled-bg-card: rgb(42,36,69);
+--disabled-opacity: 0.5;
+
+
+/* ===== BORDERS ===== */
+--border-default: #2A2445;
+--border-hover: #8B3DFF;
+--border-subtle: #221A3D;
+
+
+--stroke-default: #18142B;
+
+
+/* ===== BUTTON STATES ===== */
+--btn-primary-bg: var(--gradient-primary);
+--btn-primary-hover: linear-gradient(90deg, #7A2EFF, #A21CAF);
+--btn-primary-active: #651DDB;
+
+--btn-danger-bg: var(--danger-500);
+--btn-danger-hover: #DC2626;
+
+--btn-disabled-bg: var(--disabled-bg);
+--btn-disabled-text: var(--disabled-text);
+
+
+
+
+/* ===== BORDER RADIUS ===== */
+--radius-sm: 6px;
+--radius-md: 10px;
+--radius-lg: 16px;
+--radius-xl: 24px;
+--radius-pill: 999px;
+
+/* ===== SPACING ===== */
+--space-1: 4px;
+--space-2: 8px;
+--space-3: 12px;
+--space-4: 16px;
+--space-5: 24px;
+--space-6: 32px;
+--space-7: 48px;
+--space-8: 64px;
+
+/* ===== GLASS ===== */
+--glass-blur: blur(10px);
+
+}
+
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* ================= TOP HEADER ================= */
+
+.top-header {
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-default);
+    padding: 15px 0;
+}
+
+.top-header .nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* ================= SECOND NAV ================= */
+
+.main-nav {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-500);
+    text-shadow: var(--glow-purple);
+}
+
+.nav-menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--gradient-primary);
+    width: 0%;
+    transition: 0.3s;
+    margin-top: 4px;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-default);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-500);
+}
+
+/* NAV BUTTONS */
+
+.nav-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    padding: 8px 18px;
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--gradient-primary);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    box-shadow: var(--glow-purple);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    padding: 8px 18px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--primary-500);
+    color: var(--primary-500);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--primary-500);
+    color: white;
+}
+
+/* ================= PROMOTION SECTION ================= */
+
+/* BANNER SECTION LAYOUT */
+.banner_section{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 4rem;
+}
+
+/* PROMOTION SLIDER (LEFT BIG) */
+.promo_slider{
+    flex: 2;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ADS SLIDER (RIGHT SMALL) */
+.ads_slider{
+    flex: 1;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* IMAGE STYLE */
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ARROWS STYLE */
+.swiper-button-prev,
+.swiper-button-next{
+    color: white;
+    background: rgba(0,0,0,0.4);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* DOTS STYLE */
+.swiper-pagination-bullet{
+    background: rgb(216, 28, 28);
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--secondary-500);
+}
+
+.ads_slider .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads_slider img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ================= GAME CATEGORY SECTION ================= */
+
+.game-category {
+    padding: 2rem 0;
+    /* background: var(--bg-card); */
+}
+
+.category-container {
+    width: 90%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+
+    text-align: center;
+}
+
+.category-card{
+    position: relative;
+}
+
+.category-card img {
+    width:100%;
+    padding: 0 2rem;
+    transition:0.3s;
+}
+
+.img-hover{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+
+.category-card:hover .img-hover{
+    opacity:1;
+    transform: scale(1.02);
+}
+
+.category-card p {
+    margin-top: 10px;
+    color: var(--secondary-500);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+/* ================= POPULAR GAMES SECTION ================= */
+
+.popular_games{
+    padding:40px 60px;
+    background:var(--bg-dark);
+}
+
+/* header */
+
+.section_header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    border-bottom:1px solid var(--stroke-default);
+}
+
+.section_header h2{
+    color:var(--text);
+    font-size:20px;
+}
+
+.see_all{
+    color:var(--primary);
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* sport tabs */
+
+.sport_tabs{
+    display:flex;
+    gap:10px;
+    padding: 1rem 0;
+}
+
+.sport{
+    background: #18142B;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    color:var(--text);
+    cursor:pointer;
+}
+
+.sport:hover {
+    background: var(--bg-primary);
+    box-shadow: var(--glow-purple);
+    transform: translateY(-2px);
+}
+
+.sport.active{
+    background:var(--primary-600);
+    color:var(--text-primary);
+}
+
+/* games row */
+
+.games_row{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:16px;
+    overflow-x:auto;
+}
+
+/* card */
+
+/* .game_card{
+    background:var(--bg-card);
+    border-radius:10px;
+    padding:16px;
+    border:1px solid var(--stroke-default);
+} */
+
+.game_card{
+    background:#1C1333;
+    border-radius:10px;
+    border:1px solid var(--border-color);
+    overflow:hidden; /* keeps header rounded */
+}
+
+.teams,
+.odds{
+    padding:12px;
+}
+
+/* league */
+
+.league{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background: var(--bg-card-title); /* your color system */
+    padding:8px 12px;
+
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+    font-size:13px;
+    color:var(--text-light);
+}
+
+.league_left i {
+    color: #e18128;
+}
+
+.league_right i {
+    color: #9c9c9c;
+}
+
+.league_right i:hover {
+    background-color:var(--secondary-500);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform:scale(1.2);
+}
+
+
+/* teams */
+
+.teams{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:14px;
+}
+
+.team{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:6px;
+    font-size:13px;
+    color:var(--text);
+}
+
+.team img{
+    width:24px;
+}
+
+.team span{
+    max-width:90px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/* score */
+
+.score{
+    display:flex;
+    gap:6px;
+}
+
+.score span{
+    background: transparent;
+    border: 1px solid var(--secondary-600);
+    padding:4px 6px;
+    border-radius:4px;
+    font-size:13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* odds */
+
+.odds{
+    display:flex;
+    gap:10px;
+}
+
+.odd{
+    flex:1;
+    border:1px solid var(--primary-500);
+    text-align:center;
+    padding:8px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+.odd:hover {
+    background: var(--primary-700);
+    border:1px solid var(--primary-500);
+}
+
+
+/* ================= PROVIDER GAMES ================= */
+
+.provider_games{
+    padding:40px 60px;
+    background:var(--bg-dark);
+}
+
+.provider_games h2 {
+    text-align: center;
+}
+
+/* provider tabs */
+
+.provider_tabs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 2rem 0;
+}
+
+.provider{
+    background: #18142B;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    color:var(--text);
+    cursor:pointer;
+}
+
+.provider:hover {
+    background: var(--bg-primary);
+    box-shadow: var(--glow-purple);
+    transform: translateY(-2px);
+}
+
+.provider.active{
+    background:var(--primary-600);
+    color:var(--text-primary);
+}
+
+.provider_grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.provider_card {
+    width: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.provider_card img {
+    width: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.provider_card img {
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+
+/* ================= GAMES ================= */
+
+.games {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.games h2 {
+    margin-bottom: 40px;
+}
+
+.game-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background: var(--bg-card);
+    padding: 6rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-default);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    box-shadow: var(--glow-purple);
+    transform: translateY(-5px);
+    border-radius: var();
+}
+
+
