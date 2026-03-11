@@ -630,11 +630,17 @@ body {
 
 .provider{
     background: #18142B;
+    width: 100%;
     border:none;
-    padding:8px 14px;
+    padding:16px 0;
     border-radius:8px;
     color:var(--text);
     cursor:pointer;
+}
+
+.provider img {
+    width: 100px;
+    height: 20px;
 }
 
 .provider:hover {
