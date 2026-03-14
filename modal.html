@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    
+    <button id="open">Click me</button>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h2>Cancel Registration?</h2>
+            <p>Are you sure you want to cancel creating your account?</p>
+
+            <!-- <div class="btn-wrapper">
+                <button type="button" class="btn-secondary" onclick="goStep1()">No</button>
+                <button type="button" class="btn-primary" onclick="goLogin()">Yes, back to login</button>
+            </div> -->
+            <button id="close">Close me</button>
+        </div>
+    </div>
+
+
+<script src="js/app.js"></script>
+
+    <script>
+        const open = document.getElementById('open');
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+        
+        open.addEventListener('click', () => {
+            modal_container.classList.add('show');
+        });
+
+        close.addEventListener('click', () => {
+            modal_container.classList.remove('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spolive - Register</title>
-<link rel="stylesheet" href="css/register.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spolive - Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -35,10 +36,35 @@
         <form class="register-form">
 
             <div class="input-group">
-                <label>Phone Number</label>
-                <input type="phone" placeholder="Eg: 0143123454">
+                <label>Phone Number <span class="required">*</span></label>
+
+                <div class="phone-input">
+
+                    <!-- Country Code -->
+                     <div class="country-code">
+                        <!-- <img src="https://flagcdn.com/w20/my.png" alt="MY"> -->
+                         <div class="select-wrapper">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <select class="country-select">
+                                <option value="+62">Korea (+82)</option>
+                                <option value="+62">Finland (+338)</option>
+                                <option value="+62">France (+33)</option>
+                                <option value="+62">Gabon (+241)</option>
+                                <option value="+62">Georgia (+995)</option>
+                                <option value="+62">Indonesia (+62)</option>
+                                <option value="+60">Malaysia (+60)</option>
+                                <option value="+65">Singapore (+65)</option>
+                            </select>
+                        </div>
+                     </div>
+
+                    <!-- Phone Input  -->
+                     <input type="tel" placeholder="Eg: 143123454">
+                </div>
             </div>
 
+
+<!-- Bank Name & Acc No Input  -->
             <div class="form-row">
                 <div class="input-group">
                     <label>Bank Name <span class="required">*</span></label>
@@ -55,54 +81,79 @@
                         </div>
                     </div>
 
-                    <div class="input-group">
-                        <label>Account Number <span class="required">*</span></label>
-                        <input type="number" placeholder="Enter your account number">
-                    </div>
+                <div class="input-group">
+                    <label>Account Number <span class="required">*</span></label>
+                    <input type="number" placeholder="Enter your account number">
+                </div>
             </div>
             
             
-
+<!-- Full Name Input  -->
             <div class="input-group">
                 <label>Full Name <span class="required">*</span></label>
                 <input type="name" placeholder="Enter your full name">
             </div>
 
-    
-                <div class="input-group">
-                    <label>Referral code <span class="required">*</span></label>
-                    <input type="name" placeholder="Enter referral code">
-                </div>
+<!-- Referral Code Input  -->
+            <div class="input-group">
+                <label>Referral Code <span class="required">*</span></label>
+                <input type="number" placeholder="Enter referral code">
+            </div>
 
-                <button type="button" class="btn-secondary">Send again</button>
-
-
+<!-- Authentication Method & Number Input  -->
+        <div class="form-row">
             <div class="input-group">
             <label for="method">Authentication Method <span class="required">*</span></label>
                 <div class="select-wrapper">
                     <i class="fa-solid fa-chevron-down"></i>
                     <select name="method" id="method">
-                    <option value="method_1">Method 1</option>
-                    <option value="method_2">Method 2</option>
-                    <option value="method_3">Method 3</option>
+                    <option value="sms">SMS</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="email">Email</option>
                 </select>
                 </div>
             </div>
 
+            <div class="input-group">
+                <label>Authentication Code <span class="required">*</span></label>
 
+                <div class="input-row">
+                    <input type="number" placeholder="Enter authentication code">
+                    <button type="button" class="btn-send">Send again</button>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Checkbox  -->
             <div class="terms">
                 <label>
                     <input type="checkbox">
-                    I agree to the <a href="#">Terms of Use & Privacy Policy and am 18 years of age or older.</a>
+                    I agree to the <a href="#">Terms of Use & Privacy Policy and I am 18 years of age or older.</a>
                 </label>
             </div>
 
             <div class="btn-wrapper">
                 <button type="button" class="btn-secondary" onclick="goStep1()">Cancel</button>
-                <button type="button" class="btn-primary" onclick="nextStep()">Create Account</button>
+                <!-- <button type="button" class="btn-primary" onclick="goModal()">Create Account</button> -->
+                <button type="button" class="btn-primary" onclick="goModal()">Create Account</button>
+                <!-- <button id="open" class="btn-primary">Create Account</button> -->
+
+
+                <!-- Create Account Button -->
+                <!-- <button id="createAccountBtn">Create Account</button> -->
+
+                <!-- Success Popup -->
+                <!-- <div id="successPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Account Created Successfully!</h2>
+                    <p>Welcome! Your account has been created.</p>
+                </div>
+                </div> -->
             </div>
 
-            <!-- <button type="submit" class="btn-primary">Create Account</button> -->
 
             <p class="login-link">
                 Already have an account?
@@ -114,29 +165,39 @@
     </div>
 </div>
 
+<!------------------------------------- Modal Cancel Registration  ----------------------------->
+
+<!-- <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <h2>Cancel Registration?</h2>
+            <p>Are you sure you want to cancel creating your account?</p>
+
+            <div class="btn-wrapper">
+                <button type="button" class="btn-secondary" onclick="goStep1()">No</button>
+                <button type="button" class="btn-primary" onclick="goLogin()">Yes, back to login</button>
+            </div> -->
+            <!-- <button id="close">Close me</button> -->
+        <!-- </div>
+    </div> -->
+
+
+
+<script src="js/app.js"></script>
 
 <script>
+        const open = document.getElementById('open');
+        const modal_container = document.getElementById('modal_container');
+        const close = document.getElementById('close');
+        
+        open.addEventListener('click', () => {
+            modal_container.classList.add('show');
+        });
 
-function nextStep(){
-
-    // Example validation
-    const email = document.querySelector("input[type='email']").value;
-
-    if(email === ""){
-        alert("Please enter email first");
-        return;
-    }
-
-    // redirect to step 2 page
-    window.location.href = "homepage.html";
-
-}
-
-function goStep1(){
-    window.location.href = "register-step1.html";
-}
-
-</script>
+        close.addEventListener('click', () => {
+            modal_container.classList.remove('show');
+        });
+    </script>
 
 </body>
 </html>

@@ -1,0 +1,141 @@
+/* ============================= */
+/* DESIGN TOKENS */
+/* ============================= */
+
+:root {
+
+/* BACKGROUND */
+--bg-primary: #0F0B1F;
+--bg-card: #1C1333;
+--bg-glass: rgba(28, 19, 51, 0.7);
+
+/* BRAND */
+--primary-500: #8B3DFF;
+--primary-600: #7A2EFF;
+--secondary-500: #C026FF;
+
+/* TEXT */
+--text-primary: #FFFFFF;
+--text-secondary: #B9B4D0;
+--text-muted: #7C7899;
+
+/* BORDER */
+--border-default: #2A2445;
+
+/* GRADIENT */
+--gradient-primary: linear-gradient(90deg, #8B3DFF, #C026FF);
+
+/* SHADOW */
+--glow-purple: 0 0 25px rgba(139, 61, 255, 0.6);
+
+/* RADIUS */
+--radius-lg: 16px;
+--radius-md: 10px;
+
+/* SPACING */
+--space-4: 16px;
+--space-5: 24px;
+--space-6: 32px;
+}
+
+/* ============================= */
+/* GLOBAL */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg-primary);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000000;
+
+    /* background-image: url("../images/bg2.jpg");  */
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("../images/bg2.jpg");
+    background-size: cover;      
+    /* background-position: center;  */
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.modal-container {
+    /* display: none; */
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+button {
+    background-color: #C026FF;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8B3DFF;
+    color: #FFFFFF;
+}
+
+.modal {
+    width: 420px;
+    max-width: 1450px;
+    padding: var(--space-6);
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--glow-purple);
+    text-align: center;
+}
+
+.modal i {
+    color: #F59E0B;
+    font-size: 2rem;
+}
+
+.modal h2 {
+    padding: 16px 0px;
+    font-size: 20px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.modal p {
+    padding-bottom: 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+
+}
+
+
+
