@@ -204,6 +204,16 @@ body {
     font-weight: bold;
 }
 
+.error{
+    color:red;
+    font-size:12px;
+    display:none;
+}
+
+.input-group input.error-border{
+    border:1px solid red;
+}
+
 .register-form {
     display: flex;
     flex-direction: column;
