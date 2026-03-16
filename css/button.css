@@ -3,8 +3,10 @@
 /* ============================= */
 .btn-wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
     padding-top: 40px;
 }
 

@@ -17,8 +17,8 @@
         <p class="subtitle">Almost there! Just a few more details to complete.</p>
 
         <div class="step-progress">
-            <div class="step">
-                <div class="circle"><i class="fa-solid fa-check"></i></div>
+            <div class="step-success">
+                <div class="circle"  onclick="goStep1()"><i class="fa-solid fa-check"></i></div>
                 <p>General<br>Details</p>
             </div>
 
@@ -65,7 +65,7 @@
 
 
 <!-- Bank Name & Acc No Input  -->
-            <div class="form-row">
+            <!-- <div class="form-row"> -->
                 <div class="input-group">
                     <label>Bank Name <span class="required">*</span></label>
                         <div class="select-wrapper">
@@ -85,7 +85,7 @@
                     <label>Account Number <span class="required">*</span></label>
                     <input type="number" placeholder="Enter your account number">
                 </div>
-            </div>
+            <!-- </div> -->
             
             
 <!-- Full Name Input  -->
@@ -101,7 +101,7 @@
             </div>
 
 <!-- Authentication Method & Number Input  -->
-        <div class="form-row">
+        <!-- <div class="form-row"> -->
             <div class="input-group">
             <label for="method">Authentication Method <span class="required">*</span></label>
                 <div class="select-wrapper">
@@ -122,7 +122,7 @@
                     <button type="button" class="btn-send">Send again</button>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
 
 
@@ -135,10 +135,12 @@
             </div>
 
             <div class="btn-wrapper">
-                <button type="button" class="btn-secondary" onclick="goStep1()">Cancel</button>
+                <!-- <button type="button" class="btn-secondary" onclick="goStep1()">Cancel</button> -->
                 <!-- <button type="button" class="btn-primary" onclick="goModal()">Create Account</button> -->
                 <button type="button" class="btn-primary" onclick="goModal()">Create Account</button>
                 <!-- <button id="open" class="btn-primary">Create Account</button> -->
+
+                <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
 
 
                 <!-- Create Account Button -->
@@ -153,13 +155,8 @@
                 </div>
                 </div> -->
             </div>
-
-
-            <p class="login-link">
-                Already have an account?
-                <a href="login.html">Login</a>
-            </p>
-
+            
+            <!-- <p class="login-link">Already have an account? <a href="login.html">Login</a></p> -->
         </form>
 
     </div>

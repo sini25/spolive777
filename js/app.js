@@ -68,6 +68,10 @@ function goStep1(){
     window.location.href = "register-step1.html";
 }
 
+function goStep2(){
+    window.location.href = "register-step2.html";
+}
+
 function goModal(){
     window.location.href = "register-step3.html";
 }
