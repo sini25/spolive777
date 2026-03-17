@@ -670,19 +670,16 @@ body {
     width: 280px;
     transition: 0.3s;
     cursor: pointer;
-}
-
-
-.provider_card img {
     transform: translateY(-2px);
     transition: 0.3s;
 }
 
 
+
 /* ================= GAMES ================= */
 
 .games {
-    padding: 60px 20px;
+    padding:40px 60px;
     text-align: center;
 }
 
@@ -693,23 +690,36 @@ body {
 .game-grid {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 }
 
 .game-card {
-    background: var(--bg-card);
-    padding: 6rem;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+
+    /* background: var(--bg-card);
+    padding: 1rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-default);
     transition: 0.3s;
+    cursor: pointer; */
+}
+
+.game-card img{
+    width: 100%;
+    transition: 0.3s;
     cursor: pointer;
+    border-radius: var(--radius-lg);
+    /* width: 80%;
+    height: auto; */
 }
 
 .game-card:hover {
     box-shadow: var(--glow-purple);
     transform: translateY(-5px);
-    border-radius: var();
+    border-radius: var(--radius-lg);
 }
 
 

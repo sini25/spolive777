@@ -4,6 +4,34 @@ document.querySelector(".menu-toggle").onclick = () => {
     document.querySelector(".sidebar").classList.toggle("active");
 };
 
+// Password Toggle
+const togglePassword = document.getElementById("togglePassword");
+const password = document.getElementById("password");
+
+togglePassword.addEventListener("click", function () {
+
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+
+    this.classList.toggle("fa-eye-slash");
+
+});
+
+
+
+// Loader after Login
+function loginUser(){
+
+    document.getElementById("loader").style.display = "flex";
+
+    setTimeout(function(){
+        window.location.href = "homepage.html";
+    }, 60000); // 60 seconds loading
+
+}
+
+
+
 // Bet selection
 let selectedBets = [];
 const betContent = document.querySelector(".bet-content");
