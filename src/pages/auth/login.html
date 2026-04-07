@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spolive - Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../../../css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -37,19 +37,18 @@
                     <input type="checkbox">
                     Remember me
                 </label>
-                <a href="forgotpassword.html" class="forgot">Forgot password?</a>
+                <a href="../../../src/pages/auth/forgotpassword.html" class="forgot">Forgot password?</a>
             </div>
 
             <button type="button" class="btn-primary" onclick="loginUser()">Login</button>
 
-            <!-- Loading Overlay -->
             <div id="loader" class="loader-container">
                 <div class="spinner"></div>
             </div>
 
             <p class="register">
                 Don’t have an account?
-                <a href="register-step1.html">Register now</a>
+                <a href="../../../src/pages/auth/register/register-step1.html">Register now</a>
             </p>
 
         </form>
@@ -57,6 +56,6 @@
     </div>
 </div>
 
-<script src="js/app.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
