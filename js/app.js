@@ -86,7 +86,7 @@ function nextStep(){
     }
 
     // redirect to step 2 page
-    window.location.href = "register-step2.html";
+    window.location.href = "../src/pages/auth/register/register-step2.html";
 
 }
 
