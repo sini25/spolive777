@@ -18,15 +18,14 @@ togglePassword.addEventListener("click", function () {
 });
 
 
-
 // Loader after Login
 function loginUser(){
 
     document.getElementById("loader").style.display = "flex";
 
     setTimeout(function(){
-        window.location.href = "homepage.html";
-    }, 60000); // 60 seconds loading
+        window.location.href = "../home/homepage.html";
+    }, 1000); // 1 sec loading
 
 }
 
